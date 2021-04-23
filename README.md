@@ -1,12 +1,7 @@
 <p align="center">
   <img src="https://1.bp.blogspot.com/-1YKkIeYJ2tA/YII1-zNcP9I/AAAAAAAASXY/pOH4FWlkRwQMFPNAdcCkNPsqgaVoEP8JwCNcBGAsYHQ/s16000/design.png" width="650" title="Podcastr"> </br>
+  <b>O melhor para você ouvir, sempre</b>
 </p>
-<p align="center">
-  <img src="https://img.shields.io/github/forks/JuliaMaglhaes/Podcastr?label=forks&message=MIT&color=5965E0&labelColor=121214" alt="Forks">     
-
-  <img src="https://img.shields.io/github/stars/JuliaMaglhaes/Podcastr?label=stars&message=MIT&color=5965E0&labelColor=121214" alt="Stars">
-</p>
-
 <br/>
 
 ## 🚀 Proposta
