@@ -1,4 +1,4 @@
- import {GetStaticProps} from 'next'
+ import {GetServerSideProps, GetStaticProps} from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { api } from '../services/api'
@@ -112,7 +112,7 @@ export default function Home({ lastedEpisodes, allEpisodes }: HomeProps) {
     )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetServerSideProps = async () => {
     const {data} = await api.get('episodes', {
         params: {
             _limit: 12,
@@ -120,6 +120,7 @@ export const getStaticProps: GetStaticProps = async () => {
             _order: 'desc',
         }
     })
+    //GetServerSideProps GetStaticProps
 
     const episodes = data.map((episode) => {
         return {
