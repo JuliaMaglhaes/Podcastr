@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { PlayerContext, usePlayer } from "../../contexts/PlayerContext";
+import { usePlayer } from "../../contexts/PlayerContext";
 import Image from 'next/image'
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css'
@@ -132,9 +132,17 @@ export function Player(){
                         <img src="/play-previous.svg" alt="Voltar"/>
                     </button>
 
-                    <button type="button" className={styles.playButton} disabled={!episode} onClick={togglePlay}>
-                        {isPlaying ? <img src="/pause.svg" alt="Tocar"/>
-                        : <img src="/play.svg" alt="Tocar"/>}          
+                    <button
+                        type="button"
+                        className={styles.playButton}
+                        disabled={!episode}
+                        onClick={togglePlay}
+                    >
+                        { isPlaying ? (
+                        <img src="/pause.svg" alt="Pausar"/>
+                        ): (
+                        <img src="/play.svg" alt="Tocar"/>
+                        )}
                     </button>
 
                     <button type="button" onClick={playNext} disabled={!episode || !hasNext}>
